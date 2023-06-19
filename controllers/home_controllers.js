@@ -1,5 +1,7 @@
 module.exports.home = function(req, resp){
-    return resp.end('<h1> Express is Used for the project</h1>');
+    return resp.render('home', {
+        title: "Funding App"
+    });
 }
 
 // syntax for controller 
